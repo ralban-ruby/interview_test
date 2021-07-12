@@ -4,7 +4,7 @@ include: "*.view"
 
 explore: industry_leading_indicators_metadata {
   join:  industry_leading_indicators_timeseries {
-    relationship: many_to_many
+    relationship: one_to_one
     type: left_outer
     sql_on: ${industry_leading_indicators_metadata.indicatorid} = ${industry_leading_indicators_timeseries.indicatorid} ;;
   }
