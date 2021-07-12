@@ -66,6 +66,7 @@ view: industry_leading_indicators_metadata {
   }
 
   dimension: indicatorid {
+    primary_key: yes
     type: string
     sql: ${TABLE}."INDICATORID" ;;
   }

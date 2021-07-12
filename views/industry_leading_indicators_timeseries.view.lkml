@@ -18,6 +18,7 @@ view: industry_leading_indicators_timeseries {
   }
 
   dimension: indicatorid {
+    primary_key: yes
     type: string
     sql: ${TABLE}."INDICATORID" ;;
   }
